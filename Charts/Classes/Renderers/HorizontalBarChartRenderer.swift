@@ -223,7 +223,7 @@ public class HorizontalBarChartRenderer: BarChartRenderer
                     }
                     
                     // Set the color for the currently drawn value. If the index is out of bounds, reuse colors.
-                    CGContextSetFillColorWithColor(context, dataSet.colorAt(k).CGColor)
+                    CGContextSetFillColorWithColor(context, dataSet.colorAt(j * 2 + k).CGColor)
                     CGContextFillRect(context, barRect)
                     
                     if drawBorder
